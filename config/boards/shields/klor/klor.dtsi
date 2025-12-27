@@ -28,7 +28,7 @@ physical_layout0: physical_layout_0 {
 	compatible = "zmk,physical-layout";
 	display-name = "KLOR Layout";
 	transform = <&default_transform>;
-	kscan = <&default_kscan>;  
+	kscan = <&kscan0>;  
 
 	keys  //                     w   h    x    y     rot    rx    ry
 		= <&key_physical_attrs 100 100    0   90 (-1000)   200   325>
