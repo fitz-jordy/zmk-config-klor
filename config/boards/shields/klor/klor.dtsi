@@ -4,8 +4,13 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "klor-layouts.dtsi"
 #include "klor_common.dtsi"
+#include "klor-layouts.dtsi"
+
+&klor_physical_layout {
+    kscan = <&kscan0>; // Label of the kscan node this layout uses
+    transform = <&default_transform>; // Label of the matrix transform this layout uses
+};
 
 / {
 	default_transform: keymap_transform_0 {
@@ -28,11 +33,6 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                 RC(2,6) RC(2,7) 
 		, <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		, <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		;
-};
-
-&klor_physical_layout {
-    kscan = <&kscan0>; // Label of the kscan node this layout uses
-    transform = <&default_transform>; // Label of the matrix transform this layout uses
 };
 
 &left_encoder {
