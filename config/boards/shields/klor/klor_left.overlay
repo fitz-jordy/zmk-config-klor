@@ -18,7 +18,6 @@
                 <&gpio1 11 GPIO_ACTIVE_HIGH>,  /* Col 3 = P1.11 */
                 <&gpio0 10 GPIO_ACTIVE_HIGH>,  /* Col 4 = P0.10 */
                 <&gpio0 9  GPIO_ACTIVE_HIGH>;  /* Col 5 = P0.09 */
-		;
 };
 
 &left_encoder {
