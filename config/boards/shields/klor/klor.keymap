@@ -175,6 +175,7 @@ label= "GAME"                                                ;
 &kp LA(ENTER)        &kp TAB         &kp A   &kp S         &kp D      &kp F     &trans  &trans     &trans  &trans  &trans  &trans
 &kp LEFT_CONTROL     &kp LEFT_SHIFT  &kp Z   &kp X         &kp C      &kp V     &trans  &trans     &trans  &trans  &trans  &trans
                                      &trans  &kp LEFT_ALT  &kp SPACE  &trans    &trans  &kp RET    &trans  &trans
+                        >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
         };
