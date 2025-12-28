@@ -152,7 +152,7 @@
 &kp ESCAPE  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp SINGLE_QUOTE  &kp DELETE  
 &skq LALT  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &kp RIGHT_ALT  
 &skq LSHFT  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp FSLH  &sl 5  
-        &kp C_MUTE  &sk LCTRL  &mt LGUI RET  &lt 2 TAB  &lt 3 BSPC  &kp SPACE  &skq RSHFT  &kp C_PLAY_PAUSE
+        &kp C_MUTE  &sk LCTRL  &mt LGUI RET  &lt 3 TAB  &lt 4 BSPC  &kp SPACE  &skq RSHFT  &kp C_PLAY_PAUSE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -253,7 +253,7 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans  &trans  &kp F11  &kp F12  &bt BT_CLR  &bt BT_DISC 2  &kp C_BRIGHTNESS_INC  &none  &kp LG(PRINTSCREEN)  &kp LG(LA(R))  &none  &none  &trans  &trans  &kp CAPS  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp C_BRIGHTNESS_DEC  &none  &kp LG(LS(S))  &none  &none  &sys_reset  &trans  &trans  &trans  &trans  &kp SEMICOLON  &tog 1  &tog 4  &trans  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans  &trans  &kp F11  &kp F12  &bt BT_CLR  &bt BT_DISC 2  &kp C_BRIGHTNESS_INC  &none  &kp LG(PRINTSCREEN)  &kp LG(LA(R))  &none  &none  &trans  &trans  &kp CAPS  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp C_BRIGHTNESS_DEC  &none  &kp LG(LS(S))  &none  &none  &sys_reset  &trans  &trans  &trans  &trans  &kp SEMICOLON  &tog 1  &tog 2  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
