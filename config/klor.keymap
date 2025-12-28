@@ -32,7 +32,19 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        skq: sticky_key_quick_release {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SK_QUICK_RELEASE";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <1000>;
+            quick-release;
+            ignore-modifiers;
+        }
     };
+
+
 
     combos {
         compatible = "zmk,combos";
@@ -137,7 +149,7 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp SINGLE_QUOTE  &kp DELETE  &sk LALT  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &kp RIGHT_ALT  &sk LSHFT  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp FSLH  &sl 5  &trans  &sk LCTRL  &mt LGUI RET  &lt 2 TAB  &lt 3 BSPC  &kp SPACE  &sk RSHFT  &trans
+&kp ESCAPE  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp SINGLE_QUOTE  &kp DELETE  &sk LALT  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &kp RIGHT_ALT  &skq LSHFT  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp FSLH  &sl 5  &trans  &sk LCTRL  &mt LGUI RET  &lt 2 TAB  &lt 3 BSPC  &kp SPACE  &sk RSHFT  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
