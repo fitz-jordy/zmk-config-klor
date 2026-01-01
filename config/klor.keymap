@@ -48,7 +48,10 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
+            tap_ms = 30;
         };
+
+        &msc {}
     };
 
 
@@ -162,7 +165,7 @@
         &kp C_MUTE  &sk LCTRL  &mt LGUI RET  &lt 3 TAB  &lt 4 BSPC  &kp SPACE  &skq RSHFT  &kp C_PLAY_PAUSE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &sensor_rotate_msc SCRL_UP SCRL_DOWN>;
         };
 
         indo_layer {
@@ -240,7 +243,7 @@
 &trans  &kp DELETE  &trans  &kp UNDER  &kp PLUS  &kp PAGE_UP  &trans  &trans  &trans  &kp BSLH  &kp PIPE  &trans  &trans  &kp HOME  &kp END  &kp MINUS  &kp EQUAL  &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp K_APP  &trans  &trans  &kp LT  &kp GT  &kp K_COPY  &kp K_PASTE  &kp SEMI  &kp C_PLAY_PAUSE  &kp C_PREV  &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans  &kp ESCAPE  &trans  &kp SEMICOLON  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRI_INC C_BRI_DEC &inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp LA(TAB) LS(LA(TAB)) &inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         function_layer {
