@@ -139,7 +139,7 @@
     &msc {
         time-to-max-speed-ms = <100>;
         acceleration-exponent = <1>;
-    }
+    };
 
     keymap {
         compatible = "zmk,keymap";
