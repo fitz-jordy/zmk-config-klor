@@ -51,11 +51,9 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
-            tap-ms = <30>;
+            tap-ms = <100>;
         };
     };
-
-
 
     combos {
         compatible = "zmk,combos";
@@ -137,6 +135,11 @@
             label = "M_EYE";
         };
     };
+
+    &msc {
+        time-to-max-speed-ms = <100>;
+        acceleration-exponent = <1>;
+    }
 
     keymap {
         compatible = "zmk,keymap";
