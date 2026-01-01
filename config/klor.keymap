@@ -50,8 +50,6 @@
             bindings = <&msc>, <&msc>;
             tap_ms = <30>;
         };
-
-        &msc {}
     };
 
 
