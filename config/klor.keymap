@@ -48,7 +48,7 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
-            tap_ms = 30;
+            tap_ms = <30>;
         };
 
         &msc {}
