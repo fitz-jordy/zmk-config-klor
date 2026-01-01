@@ -25,6 +25,12 @@
 #define RAISE  2
 #define ADJUST 3
 
+
+&msc {
+    time-to-max-speed-ms = <100>;
+    acceleration-exponent = <1>;
+};
+
 / {
     behaviors {
         hm: homerow_mods {
@@ -134,11 +140,6 @@
             bindings = <&kp E &kp Y &kp E>;
             label = "M_EYE";
         };
-    };
-
-    &msc {
-        time-to-max-speed-ms = <100>;
-        acceleration-exponent = <1>;
     };
 
     keymap {
