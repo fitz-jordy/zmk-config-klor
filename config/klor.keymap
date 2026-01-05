@@ -166,7 +166,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &sensor_rotate_msc SCRL_UP SCRL_DOWN>;
         };
 
-        indo_layer {.
+        indo_layer {
             label = "INDO";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp K   &trans
