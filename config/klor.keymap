@@ -211,7 +211,7 @@
 &trans  &kp DELETE  &trans   &kp UNDER      &kp PLUS       &kp PAGE_UP    &trans            &trans      &trans      &kp BSLH           &kp PIPE         &trans
 &trans  &kp HOME    &kp END  &kp MINUS      &kp EQUAL      &kp PAGE_DOWN  &kp LEFT          &kp DOWN    &kp UP      &kp RIGHT          &kp K_APP        &trans
 &trans  &kp LT      &kp GT   &kp LC(LS(C))  &kp LC(LS(V))  &kp SEMI       &kp C_PLAY_PAUSE  &kp C_PREV  &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
-                    &trans   &kp ESCAPE     &trans         &kp SEMICOLON  &trans &kp minus            &trans      &trans      &trans
+                    &trans   &kp ESCAPE     &trans         &kp SEMICOLON  &trans            &kp MINUS   &trans      &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT &sensor_rotate_msc LC(PLUS) LC(MINUS)>;
